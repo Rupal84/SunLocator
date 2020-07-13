@@ -1,0 +1,21 @@
+<h2>Sun position</h2>
+<div class="row chart">
+<ngx-charts-line-chart 
+[scheme]="colorScheme"
+[results]="data"
+[gradient]="gradient"
+[xAxis]="showXAxis"
+[yAxis]="showYAxis"
+[legend]="showLegend"
+[showXAxisLabel]="showXAxisLabel"
+[yScaleMax]="yScaleMax"
+[yScaleMin]="yScaleMin"
+[showYAxisLabel]="showYAxisLabel"
+[yAxisTickFormatting]="yAxisTickFormatting"
+[xAxisLabel]="xAxisLabel"
+[yAxisLabel]="yAxisLabel"
+[autoScale]=false
+[referenceLines]="referenceLines"
+(select)="onSelect($event)">
+</ngx-charts-line-chart>
+</div>

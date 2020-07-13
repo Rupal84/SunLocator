@@ -1,0 +1,32 @@
+<h2>Times</h2>
+<div class="Times">
+    <div class="row">
+        <dl class="col-md text-center">
+            <dt>Sunrise</dt>
+            <dd *ngIf="sunriseStart">{{sunriseStart}}</dd>
+            <em *ngIf="!sunriseStart">NA</em>
+        </dl>
+        <dl class="col-md text-center">
+            <dt>UVB penetration begins</dt>
+            <dd *ngIf="uvbStart">{{uvbStart}}</dd>
+            <em *ngIf="!uvbStart">NA</em>
+        </dl>
+        <dl class="col-md text-center">
+            <dt>Solar noon</dt>
+            <dd *ngIf="solarNoon">{{solarNoon}}</dd>
+            <em *ngIf="!solarNoon">NA</em>
+        </dl>
+        <dl class="col-md text-center">
+            <dt>UVB penetration ends</dt>
+            <dd *ngIf='uvbEnd'>{{uvbEnd}}</dd>
+            <em *ngIf='!uvbEnd'>N/A</em>
+            
+        </dl>
+        <dl class="col-md text-center">
+            <dt>Sunset</dt>
+            <dd *ngIf="sunsetEnd">{{sunsetEnd}}</dd>
+            <em *ngIf="!sunsetEnd">N/A</em>
+            
+        </dl>
+    </div>
+</div>

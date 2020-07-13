@@ -1,0 +1,28 @@
+<div>
+    <h3>Date</h3>
+    <ul class="list-group margin">
+        <li class="list-group-item">
+            <time>{{date}}</time>
+        </li>
+    </ul>
+    <div class="btn-group d-flex">
+        <button class="btn border-secondary"
+            type="button"
+            (click)="onClickPrev()">
+            &larr;
+        </button>
+
+        <button class="btn btn-secondary"
+            type="button"
+            (click)="onClickToday()"
+            [disabled]="isToday === true">
+            Today
+        </button>
+
+        <button class="btn border-secondary"
+            type="button"
+            (click)="onClickNext()">
+            &rarr;
+        </button>
+    </div>
+</div>
